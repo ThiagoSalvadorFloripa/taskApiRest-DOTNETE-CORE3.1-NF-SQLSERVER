@@ -1,11 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace taskApiRest.Models
 {
     public class Task
     {
-        public int TaskId { get; set; }
+        [Key]
+        public int Id { get; set; }
 
+        
+        [Required(ErrorMessage = "Field Title required")]
+        [MaxLength(120, ErrorMessage = "Title too big")]
         public string Title { get; set; }
 
+        [Required(ErrorMessage = "Field Description required ")]
         public string  Description { get; set; }
 
         public string  DataCreate { get; set; }
