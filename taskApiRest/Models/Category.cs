@@ -11,8 +11,8 @@ namespace taskApiRest.Models
         [Required (ErrorMessage = "Field NameCategory required")]
         public string NameCategory { get; set; }
 
-        public int IdTask { get; set; }
+        public int IdTicket { get; set; }
 
-        public Task Task { get; set; }
+        public Ticket Ticket { get; set; }
     }
 }

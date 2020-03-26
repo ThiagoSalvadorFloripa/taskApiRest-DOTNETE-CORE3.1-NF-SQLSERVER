@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace taskApiRest.Models
 {
-    public class Task
+    public class Ticket
     {
         [Key]
         public int Id { get; set; }

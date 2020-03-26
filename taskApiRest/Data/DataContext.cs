@@ -7,7 +7,7 @@ namespace taskApiRest.Data
     {
         public DataContext(DbContextOptions<DataContext>options): base (options){}
 
-        public DbSet<Task> Tasks{get; set;}
+        public DbSet<Ticket> Tickets{get; set;}
 
         public DbSet<Category> Categories{get; set;}
 
